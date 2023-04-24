@@ -88,6 +88,7 @@ button{
     display: flex;
     width: 75%;
     margin: 0 auto;
+    justify-content: space-between;
 }
 .left-div, .right-div, .left-div-2, .right-div-2, .left-div-3, .right-div-3{
     width: 50%;
@@ -441,7 +442,130 @@ footer{
     padding-top: 100px;
 }
 
+@media (max-width: 3840px){
+    .right-div{
+        width: 30%;
+    }
+    .navigation-bar, .home-div, .about, .skills2, .work, .cert-div, .bio{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1920px){
+    .right-div{
+        width: 40%;
+    }
+}
+
+@media (max-width: 890px){
+
+    .navigation-bar, .home-div, .about, .skills2, .work, .cert-div, .bio{
+        width: 90%;
+    }
+    #sec-2, #sec-3, #sec-4, #sec-cert{
+        padding-top: 40px;
+    }
+     .skills2{
+        display: block;
+    }
+    .home-div{
+        padding-top: 100px;
+    }
+   .left-div-3, .right-div-3{
+        width: 100%;
+    }
+    .right-div-2{
+        padding: 0 20px;
+    }
+    .section-3, .about{
+        margin-bottom: 0;
+    }
+    #mypic{
+        width: 100%;
+    }
+    .icon-div{
+        margin: 0;
+    }
+    .social-icon{
+        margin: 0 20px;
+    }
+    .skills-card, .skills-card2{
+        width: 100%;
+        margin: 0;
+    }
+    .timeline{
+        width: 100%;
+    }
+    #intro{
+        font-size: 40px;
+    }
+    .dynamic-text>li{
+        font-size: 40px;
+    }
+    #title{
+        margin: 50px;
+    }
+    .certificate:hover{
+        transition: .3s;
+        transform: scale(1);
+    }
+    .cert-div{
+        margin-bottom: 50px;
+    }
+    #copyright{
+        font-size: 15px;
+    }
+    .menu-bar{
+        display: block;
+    }
+    nav>ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #0d1730;
+        right: -100%;
+        top: 50px;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked~ul{
+        right: 0;
+    }
+    nav>ul>li>a{
+        color: white;
+    }
+    nav>ul>li:hover{
+        background-color: #14295e;
+    }
+    nav>ul>li{
+        margin: 0;
+        display: block;
+        line-height: 50px;
+    }
+    header{
+        opacity: 100%;
+    }
+    nav>ul>li:hover{
+        position: relative;
+    }
+    nav>ul>li:hover:after{
+        content: "";
+        background-color: #0d1730;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+    .navigation-bar{
+        padding: 10px 0;
+    }
+}
+
 @media (max-width: 480px){
+    .right-div-2{
+        padding: 0;
+    }
     .navigation-bar, .home-div, .about, .skills2, .work, .cert-div, .bio{
         width: 90%;
     }
